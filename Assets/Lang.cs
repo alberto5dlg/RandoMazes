@@ -5,7 +5,7 @@ using System.Xml;
 
 using UnityEngine;
 
-namespace AssemblyCSharp
+namespace RandoMazes.Languages
 {
 	public class Lang
 	{
@@ -14,7 +14,7 @@ namespace AssemblyCSharp
 
 		public Lang (String lang, String path)
 		{
-			setLanguage (lang, path);
+			setLanguage (path, lang);
 		}
 
 		public void setLanguage ( string path, string language) {
