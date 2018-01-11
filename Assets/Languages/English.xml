@@ -1,14 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 	<languages>
+
 		<English>
 			<string name="app_name">RandoMazes</string>
 			<string name="score_text">Score: </string>
+			<string name="welcome">Welcome </string>
 		</English>
-
-		<Spanish>
-			<string name="app_name">RandoMazes</string>
-			<string name="score_text">Puntuación: </string>
-		</Spanish>
-
 
 	</languages>

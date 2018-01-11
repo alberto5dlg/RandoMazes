@@ -10,10 +10,8 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		BeginGame ();
-		language = new Lang ("Spanish", "Assets/Languages/lang.xml"); 
-		Debug.Log(language.getString("score_text")); 
-		language.setLanguage ("Assets/Languages/lang.xml", "English");
-		Debug.Log (language.getString ("score_text"));
+		language = new Lang ("Spanish", "Assets/Languages/Spanish.xml"); 
+		Debug.Log (language.getString ("welcome")); 
 	}
 	
 	// Update is called once per frame
