@@ -94,6 +94,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 953671604}
   - 114: {fileID: 953671603}
+  - 114: {fileID: 953671606}
+  - 114: {fileID: 953671605}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -112,6 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c11596ad258aa41a4ef4de5b574003, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mazePrefab: {fileID: 11495302, guid: a1b01e49d6e617945b9dede8fe3b4308, type: 2}
 --- !u!4 &953671604
 Transform:
   m_ObjectHideFlags: 0
@@ -125,6 +128,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &953671605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 953671602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e51fc26bfdc2ff74696a489c1204e652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coordinates:
+    x: 0
+    z: 0
+--- !u!114 &953671606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 953671602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83575760b0355f04a8b86986d414ce87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cellPrefab: {fileID: 0}
+  passagePrefab: {fileID: 0}
+  wallPrefab: {fileID: 0}
+  size:
+    x: 0
+    z: 0
+  generationStepDisplay: 0
 --- !u!1 &1376489294
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,10 +240,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1376489294}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.42261833, y: 0, z: 0, w: 0.9063078}
+  m_LocalPosition: {x: 6, y: 22, z: -22}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -221,6 +256,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1767731827}
   - 108: {fileID: 1767731826}
+  - 114: {fileID: 1767731828}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -267,10 +303,28 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1767731825}
-  m_LocalRotation: {x: 0.40821794, y: -0.23456973, z: 0.109381676, w: 0.87542605}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.30070582, y: 0, z: 0, w: 0.95371693}
+  m_LocalPosition: {x: -6.8, y: 3.6, z: -10.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 35, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &1767731828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1767731825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83575760b0355f04a8b86986d414ce87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cellPrefab: {fileID: 0}
+  passagePrefab: {fileID: 0}
+  wallPrefab: {fileID: 0}
+  size:
+    x: 0
+    z: 0
+  generationStepDisplay: 0
